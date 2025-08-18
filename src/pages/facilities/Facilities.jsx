@@ -16,7 +16,7 @@ const Facilities = () => {
             {zone.attractions.map((attraction, attrIndex) => (
               <li key={attrIndex} style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px', borderRadius: '5px' }}>
                 <h3>{attraction.name}</h3>
-                <img className="facilities-img" src={attraction.image} alt={attraction.name} style={{ widtht: '50%', alignItems: 'center' }} />
+                <img className="facilities-img" src={attraction.image} alt={attraction.name} />
                 <p>{attraction.description}</p>
                 <p><strong>Thrill Level:</strong> {attraction.thrill}</p>
                 {/* <p><strong>Height Requirement:</strong> {attraction.heightReq}</p> */}
@@ -27,6 +27,7 @@ const Facilities = () => {
         </div>
       ))}
       <img className="facilities-mapimage" src="/image/adventure_map.png" alt="" style={{ widtht: '50%', alignItems: 'center' }}/>
+      <button className="facilities-tickets-button"> Get Tickets</button>
     </div>
   );
 };

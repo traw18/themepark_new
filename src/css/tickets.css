@@ -23,10 +23,19 @@ body {
 }
 .tickets {
     h1{
-        font-size: 2.5rem;
-        color: var(--primary);
-        margin-bottom: 1rem;
-    }
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
     img {
         width: 100%;
         height: auto;
@@ -34,21 +43,20 @@ body {
         margin: 0 auto;
         border-radius: 10px;
     }
-    h2 {
+    h2 {font-family: 'Orbitron', sans-serif;
         font-size: 1.5rem;
         color: var(--secondary);
         margin-top: 1rem;
     }
-    h3 {
+    h3 {font-family: 'Orbitron', sans-serif;
         font-size: 1.2rem;
         color: var(--accent);
         margin-top: 0.5rem;
     }
-    p{
+    p {font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 1rem;
         margin-top: 0.5rem;
     }
-
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -72,15 +80,44 @@ body {
 
         }
 
-.ticket-checkout-button {
+/* .ticket-checkout-button {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     border-radius: 8px;
     color: var(--bg-dark);
     background-color: var(--accent);
-    font-size: 1.2rem;}
+    font-size: 1.2rem;} */
 
-.ticket-checkout-button:hover {
-    background-color: var(--primary);
-}   
+.ticket-checkout-button {
+    margin-bottom: 100px;
+    font-family: 'Audiowide', sans-serif;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--bg-dark);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticket-checkout-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.ticket-checkout-button:hover { filter:brightness(200%);}

@@ -74,7 +74,7 @@ const App = () => {
             {/* Adult Ticket */}
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="font-medium">Adult (Ages 12-64)</h3>
+                <h3 className="font-medium">Adult ( Ages 12-64 )</h3>
                 <p className="text-gray-600">HK${ticketPrices.adult}</p>
               </div>
               <div className="flex items-center space-x-2">
@@ -98,7 +98,7 @@ const App = () => {
             {/* Child Ticket */}
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="font-medium">Child (Ages 3-11)</h3>
+                <h3 className="font-medium">Child ( Ages 3-11 )</h3>
                 <p className="text-gray-600">HK${ticketPrices.child}</p>
               </div>
               <div className="flex items-center space-x-2">
@@ -122,7 +122,7 @@ const App = () => {
             {/* Senior Ticket */}
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="font-medium">Senior (Ages 65+)</h3>
+                <h3 className="font-medium">Senior ( Ages 65+ )</h3>
                 <p className="text-gray-600">HK${ticketPrices.senior}</p>
               </div>
               <div className="flex items-center space-x-2">
