@@ -45,11 +45,12 @@ const App = () => {
   const canProceed = selectedDate && (tickets.adult + tickets.child + tickets.senior > 0);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
+    <div className="tickets min-h-screen bg-gray-100 flex flex-col items-center p-4">
       <header className="w-full max-w-4xl mb-8">
         <h1 className="text-3xl font-bold text-center text-blue-900">
           Admission Tickets
         </h1>
+        <img src="/image/robots04.jpg" alt="" className="tickets-banner" style={{ width: '100%'}}/>
       </header>
 
       <main className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">
@@ -147,7 +148,7 @@ const App = () => {
         {/* Summary Section */}
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
-          <div className="space-y-2">
+          <div className="ticket-summary space-y-2">
             <p>
               <span className="font-medium">Visit Date:</span>{' '}
               {selectedDate ? selectedDate.toLocaleDateString() : 'Not selected'}
@@ -164,7 +165,7 @@ const App = () => {
               <span className="font-medium">Senior Tickets:</span> {tickets.senior} x HK$
               {ticketPrices.senior}
             </p>
-            <p className="text-lg font-bold">
+            <p className="ticket-total text-lg font-bold">
               Total: HK${totalPrice()}
             </p>
           </div>
@@ -172,7 +173,7 @@ const App = () => {
 
         {/* Checkout Button */}
         <button
-          className={`w-full py-3 rounded-md text-white ${
+          className={`ticket-checkout-button w-full py-3 rounded-md text-white ${
             canProceed ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-400 cursor-not-allowed'
           }`}
           disabled={!canProceed}

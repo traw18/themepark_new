@@ -1,68 +1,86 @@
-/* global settings */
-html, body {
-    margin: 0;
-    padding: 0;
+/* tickets */
+:root {
+   --primary: #00ffff;
+   --secondary: #ff00ff;
+   --accent: #ffff00;
+   --bg-dark: #0a0a0a;
+   --bg-glass: rgba(255, 255, 255, 0.05);
+   --text-primary: #ffffff;
+   --text-secondary: #b0b0b0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 body {
-    font-family: var(--ff-primary);
-    background: var(--primary-white);
-    color: var(--grey-1);
-    line-height: 1.5;
-    font-size: 0.875rem;
+   font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+   background-color: var(--bg-dark);
+   color: var(--text-primary);
+   overflow-x: hidden;
+   position: relative;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-align: center;
+}
+.tickets {
+    h1{
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: var(--secondary);
+        margin-top: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: var(--accent);
+        margin-top: 0.5rem;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background-color: var(--bg-dark);
 }
 
-ul {
-    list-style-type: none;
-}
+.ticket-summary {
+        background: var(--bg-glass);
+        color: var(--text-primary);
+        font-size: 1.5rem;;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+.ticket-total{
+            color: var(--accent);
+            font-size: 2rem;
+            font-weight: bold;
 
-a {
-    text-decoration: none;
-}
+        }
 
-img:not(.logo) {
+.ticket-checkout-button {
     width: 100%;
-    display: block;
-}
-/* make image fully fill up the div container (except .logo image) */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: var(--bg-dark);
+    background-color: var(--accent);
+    font-size: 1.2rem;}
 
-h1,h2,h3,h4 {
-    letter-spacing: var(--spacing);
-    line-height: 1.25;
-    margin-bottom: 0.75rem;
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 3rem;
-    text-transform:uppercase;
-}
-h2 {
-    padding: 40px;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--primary-3)
-}
-h3 {
-    font-size: 1.25rem;
-    text-transform:capitalize;
-}
-h4 {
-    font-size: 0.875rem;
-}
-p {
-    margin-bottom: 1.25rem;
-    color: var(--grey-5);
-}
-span {
-    color: var(--primary-5)
-}
+.ticket-checkout-button:hover {
+    background-color: var(--primary);
+}   

@@ -1,28 +1,37 @@
-import a1 from "/image/attraction_1.png";
-import a2 from "/image/attraction_2.png";
-import a3 from "/image/attraction_3.png";
-import a4 from "/image/attraction_4.png";
+import a1 from "/image/coaster00.jpg";
+import a2 from "/image/bumper02.jpg";
+import a3 from "/image/robots02.jpg";
+import a4 from "/image/tower01.jpg";
+import s1 from "/image/gearshop02.jpg";
+import s2 from "/image/gearshop03.jpg";
 
 export const zones = [
   {
     name: "Signature Experiences",
-    description: "High-thrill zone for daredevils with intense slides.",
+    description: "Experience the ultimate fusion of cyberpunk thrills and Hong Kong flair with our iconic rides and experiences.",
     attractions: [
-      { name: "Thunder Loop", image: a1, description: "Gravity-defying twists and turns on a high-speed slide.", thrill: "High", heightReq: "120cm minimum" },
-      { name: "Daredevil Drop", image: a2, description: "Free-fall drop from great heights into a splash pool.", thrill: "High", heightReq: "120cm minimum" },
-      { name: "Bravery Cliffs", image: a3, description: "Open tube slides with sudden drops and curves.", thrill: "High", heightReq: "120cm minimum" },
-      { name: "Skyhigh Falls", image: a4, description: "Tall slides with scenic views and steep descents.", thrill: "High", heightReq: "120cm minimum" }
+      { name: "Neon Vortex Ride", image: a1, description: "Step into the heart-pounding world of the Neon Vortex Ride, where the pulsating energy of a cyberpunk Hong Kong comes alive in a whirlwind of speed and spectacle. This state-of-the-art roller coaster is the crown jewel of our theme park, designed to immerse thrill-seekers in a futuristic metropolis inspired by the neon-drenched streets of Kowloon and the high-tech chaos of a dystopian future. As you strap into your sleek, glowing pod—adorned with holographic displays and ergonomic seats that adjust to your body's contours—the anticipation builds like the hum of a revving fusion engine.", thrill: "High", heightReq: "120cm minimum" },
+      { name: "Holo-Dome Bumper", image: a2, description: "Welcome to the Holo-Dome Arena, a revolutionary bumper car experience that catapults classic fun into the cyberpunk era, infused with the chaotic vibrancy of Hong Kong's street life. Enclosed in a massive, translucent dome that shimmers like a holographic bubble under neon skies, this attraction turns bumping into a high-stakes battle royale. Riders pilot customized bumper cars—sleek, hover-capable vehicles with glowing chassis and customizable LED patterns—that glide across a multi-level arena floor, dodging obstacles and opponents in a frenzy of controlled chaos.", thrill: "Medium", heightReq: "120cm minimum" },
+      { name: "Blade Challenge", image: a3, description: "Dive into the Cyber Blade Challenge, an immersive robot-related experience that thrusts you into the gritty underbelly of a cyberpunk Hong Kong, where man and machine clash in epic duels. This attraction pits guests against advanced robotic opponents in a controlled arena, wielding cyber blades—safe, foam-tipped swords with embedded LEDs and sensors that light up on impact. Drawing from Hong Kong's martial arts heritage and cyberpunk narratives of augmented warriors, it's like stepping into a Wuxia film fused with robotic rebellion.", thrill: "Medium", heightReq: "No" },
+      { name: "Quantum Leap Tower", image: a4, description: "Ascend to new heights in the Quantum Leap Tower, a cyberpunk-related experience that blends heart-stopping drops with mind-bending VR, capturing the essence of Hong Kong's vertical urban sprawl in a dystopian twist. This towering attraction simulates quantum leaps through alternate realities, combining a classic drop tower with immersive virtual overlays. Riders board an open-air elevator pod that climbs 150 meters, offering panoramic views of the park's neon skyline, before plummeting in controlled freefalls that feel like jumping between dimensions.", thrill: "Moderate", heightReq: "No" }
     ]
   },
     {
     name: "Shops",
-    description: "High-thrill zone for daredevils with intense slides.",
+    description: "Discover futuristic treasures and souvenirs infused with neon-lit Asian charm in our unique park stores.",
     attractions: [
-      { name: "Thunder Loop", image: a1, description: "Gravity-defying twists and turns on a high-speed slide.", thrill: "High", heightReq: "120cm minimum" },
-      { name: "Daredevil Drop", image: a2, description: "Free-fall drop from great heights into a splash pool.", thrill: "High", heightReq: "120cm minimum" },
+      { name: "Neo Gadgets Shop", image: s1, description: "Nestled in the glowing crossroads of our cyberpunk-themed park, the Neon Gadgets Shop is a treasure trove of futuristic tech toys and accessories, echoing the bustling electronics markets of Hong Kong's Sham Shui Po. Step inside this vibrant storefront, where shelves brim with neon-lit gadgets that blend high-tech innovation with playful whimsy. From holographic projectors that cast mini cityscapes on your palm to augmented reality glasses that overlay cyberpunk filters on the real world, every item invites exploration and creativity.", thrill: "Moderate", heightReq: "No" },
+      { name: "Cyber Shop", image: s2, description: "The Cyber Souvenirs Shop stands as a memento haven in our neon-soaked park, capturing the essence of cyberpunk Hong Kong in collectible form. Modeled after the night markets of Temple Street, this shop offers an array of themed keepsakes, from t-shirts emblazoned with holographic prints of park attractions to keychains shaped like quantum portals or cyber blades.", thrill: "Moderate", heightReq: "No"  },
     ]
   },
-  // Add more zones or attractions as needed based on updates from the official site.
+      {
+    name: "Park Map",
+    description: "Navigate our neon-drenched wonderland with this guide to all attractions and shops.",
+    attractions: [
+      // { name: "Neo Gadgets Shop", image: s1, description: "Nestled in the glowing crossroads of our cyberpunk-themed park, the Neon Gadgets Shop is a treasure trove of futuristic tech toys and accessories, echoing the bustling electronics markets of Hong Kong's Sham Shui Po. Step inside this vibrant storefront, where shelves brim with neon-lit gadgets that blend high-tech innovation with playful whimsy. From holographic projectors that cast mini cityscapes on your palm to augmented reality glasses that overlay cyberpunk filters on the real world, every item invites exploration and creativity."},
+      // { name: "Cyber Shop", image: s2, description: "The Cyber Souvenirs Shop stands as a memento haven in our neon-soaked park, capturing the essence of cyberpunk Hong Kong in collectible form. Modeled after the night markets of Temple Street, this shop offers an array of themed keepsakes, from t-shirts emblazoned with holographic prints of park attractions to keychains shaped like quantum portals or cyber blades." },
+    ]
+  },
 ];
 
 // import a1 from "/public/image/attraction_1.png";

@@ -1,38 +1,45 @@
 /* facilities */
+:root {
+   --primary: #00ffff;
+   --secondary: #ff00ff;
+   --accent: #ffff00;
+   --bg-dark: #0a0a0a;
+   --bg-glass: rgba(255, 255, 255, 0.05);
+   --text-primary: #ffffff;
+   --text-secondary: #b0b0b0;
+}
+
+
+body {
+   font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+   background-color: var(--bg-dark);
+   color: var(--text-primary);
+   overflow-x: hidden;
+   position: relative;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+        
 .facilities {
-    padding: 2rem;
+  h1{text-align: center; color: var(--primary);}
+  p{font-size: 1rem; color: var(--text-primary);}
+  h2{text-align: center; color: var(--secondary);}
+  h3{padding: 10px; text-align: center;color: var(--text-primary);}
+  ul {
+    /* text-align: center; */
+    align-items: center;
+  }
 }
 
-.facilities-cards {
-    width: 100%;
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    gap: 2rem;
-    align-items: start;
-    justify-content: center;
-}
-.facility-card {
-    box-shadow: var(--dark-shadow);
-}
-.facility-card:hover {
-    transform: scale(1.03);
-    transition: var(--transition);
+.facilities-img {
+  width: 50%;
+  align-items: center;
 }
 
-.facility-card-content {
-    background: black;
-    padding: 1.5rem 2rem 2rem;
-    p{
-        font-size: 1rem;
-        color: var(--primary-6);
-    }
-    ul {
-        display:flex;
-        justify-content: space-between;
-        padding: 0;
-        font-size: 1rem;
-    }
-}
+.facilities-mapimage {
+  align-items: center
+  width: 50%;}
 
 
 /* responsive design */
@@ -47,59 +54,3 @@
     grid-template-columns: 1fr;
 }
 }
-
-/* BUTTON From Uiverse.io by flxderdev https://uiverse.io/flxderdev/fast-treefrog-50 */ 
-.button {
-  height: 55px;
-  width: 175px;
-  margin: auto;
-  align-items: center;
-  border-radius: 50px;
-  border: none;
-  text-align: center;
-  color: transparent;
-  text-shadow: 0 0 0 rgb(255, 255, 255);
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: transform 50ms ease;
-  background: linear-gradient(90deg, #5f03f4, #f441a5, #b81fff, #5f03f4);
-  background-size: 400%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: "Montserrat", sans-serif;
-}
-
-.button:hover {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(155, 0, 194, 0.9);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(155, 0, 194, 0.9);
-  box-shadow: 0px 0px 15px 0px rgba(155, 0, 194, 0.9);
-  animation: animate 8s ease infinite;
-  transition: box-shadow, 0.4s;
-  border: none;
-  font-size: 19px;
-  transform: scale(1.05, 1.05);
-  background: linear-gradient(90deg, #5f03f4, #f441a5, #b81fff, #5f03f4);
-  background-size: 400%;
-}
-
-.button:hover:before {
-  filter: blur(20px);
-  opacity: 1;
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
