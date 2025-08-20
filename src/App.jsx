@@ -5,8 +5,8 @@ import Tickets from "./pages/ticketing/Tickets";
 function App() {
   return (
   <>
-  <FacilitiesRobots />
   <Facilities />
+  <FacilitiesRobots />
   <Tickets />
   </>
   );
