@@ -50,7 +50,7 @@ const App = () => {
         <h1 className="text-3xl font-bold text-center text-blue-900">
           Admission Tickets
         </h1>
-        <img src="/image/robots04.jpg" alt="" className="tickets-banner" style={{ width: '100%'}}/>
+        <img src="/image/robots04.webp" alt="" className="tickets-banner" style={{ width: '100%'}}/>
       </header>
 
       <main className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">

@@ -26,7 +26,7 @@ const Facilities = () => {
           </div>
         </div>
       ))}
-      <img className="facilities-mapimage" src="/image/adventure_map.png" alt="" style={{ widtht: '50%', alignItems: 'center' }}/>
+      <img className="facilities-mapimage" src="/image/adventure_map.webp" alt="" style={{ widtht: '50%', alignItems: 'center' }}/>
       <button className="facilities-tickets-button"> Get Tickets</button>
     </div>
   );
